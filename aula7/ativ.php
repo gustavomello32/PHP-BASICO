@@ -11,13 +11,19 @@
     $idade = date("Y") - $an;
     
     if ($idade >= 18){ //isso é a estrutura condicional simples 
+        // apenas um if sozinho = simples
         $dirigir = true;
         $votar = true;
     }
+    elseif (($idade >= 16 && $idade <18) || ($idade > 65 )) {
+        $votar = "voto opcional";
+    } // estrutura encadeada 
+    // uso de if, elseif, else = estrutura encadeada
     else {
         $dirigir = false;
         $votar = false;
-    }
+    } //estrutura encadeada
+    // uso de if elseif e else = estrutura encadeada
     echo "A pessoa tem $idade anos <br>";
     echo "A pessoa pode dirigir?" . ($dirigir?"Ja pode dar uns pião" : "Vai tomar multinha <br>");
     echo "<br>A pessoa pode votar?" . ($votar? "Ja pode votar" : "Não pode votar <br>");  
