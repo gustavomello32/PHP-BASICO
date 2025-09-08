@@ -11,7 +11,7 @@
     $r = wordwrap($t, 20, "<br>");
     echo $r;
 
-    // esse comando vai inserir um <br> a caa 20 caracteres, mas sem cortar palavras no meio. Ele tenta quebrar na palavra mais proxima do limite de 20.
+    // esse comando vai inserir um <br> a cada 20 caracteres, mas sem cortar palavras no meio. Ele tenta quebrar na palavra mais proxima do limite de 20.
 ?>
 </body>
 </html>

@@ -7,7 +7,10 @@
 </head>
 <body>
     <?php
-    
+    $txt = "Curso em Video";
+    $tamanho = strlen($txt);
+
+    // mostra a quantidade de caracteres na variavel txt contando com espaço, etc... 
 
 ?>
 </body>
